@@ -1,0 +1,338 @@
+---
+
+title: "CoCitizen LLC"
+baseurl: "http://www.cocitizen.com/"
+languageCode: "en-us"
+publishDir: "docs"
+
+theme: "agency"
+
+#googleAnalytics: ""
+
+params:
+  # Metadata for search engines
+  name: "CoCitizen LLC"
+  description: "Your description"
+
+  # Link custom assets relative to /static
+  custom_css:
+    - "css/hero.css"
+    - "css/logo.css"
+  custom_js: []
+  favicon: "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts: false
+
+  # 404 error customization
+  error404:
+    heading: "Page couldn't be found"
+    text: "Please visit [this page](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  navigation:
+    brand: "CoCitizen"
+    # Optional logo as brand stored in img/
+    logo: "logo.png"
+    services: "Services"
+    portfolio: "Portfolio"
+    about: "About"
+    team: "Team"
+    contact: "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+#    [[menu.postpend]]
+#      url = "http://gohugo.io"
+#      name = "External link"
+#      weight = 10
+
+
+  # Hero section
+  hero:
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title: "Welcome to CoCitizen!"
+    subtitle: "It's nice to meet you"
+    buttonText: "Tell me more"
+
+
+  # Services section
+  services:
+    enable: true
+    title: "Services"
+    subtitle: "Lorem ipsum dolor sit amet consectetur."
+
+    row:
+      - list:
+        - icon: "fa-handshake-o"
+          title: "Constituent Relationship Management"
+          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+          url: "#"
+        - icon: "fa-pie-chart"
+          title: "Open Data"
+          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+          url: "#"
+        - icon: "fa-commenting-o"
+          title: "Community Engagement"
+          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+          url: "#"
+      - list:
+        - icon: "fa-institution"
+          title: "Open Government"
+          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+          url: "#"
+        - icon: "fa-group"
+          title: "Team Collaboration"
+          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+          url: "#"
+        - icon: "fa-check-square-o"
+          title: "Petitions"
+          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+          url: "#"
+ 
+
+  # Portfolio section
+  portfolio:
+    enable: false
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title: "Portfolio"
+    subtitle: "Lorem ipsum dolor sit amet consectetur."
+
+#    [params.portfolio.modal]
+#      client = "Client"
+#      date = "Date"
+#      category = "Category"
+#      buttonText = "Close project"
+    modal:
+      #- client: "Client"
+      #  date: "Date"
+      #  category: "Category"
+      #  buttonText: "Close project"
+
+      - modalID: 1
+        title: Round Icons
+        subtitle: Lorem ipsum dolor sit amet consectetur.
+        date: 2014-07-05
+        img: roundicons.png
+        preview: roundicons-preview.png
+        client: Start Bootstrap
+        clientLink: "#"
+        category: Graphic Design
+        description: Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo! <br><br>**Want these icons in this portfolio item sample?** You can download 60 of them for free, courtesy of [RoundIcons.com](//getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc), or you can purchase the 1500 icon set [here](//getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc).
+
+
+
+  # About section
+  about:
+    enable: true
+    title: "About"
+    subtitle: "Lorem ipsum dolor sit amet consectetur."
+    endpoint: "Be part<br>of our<br>story!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    events:
+      - title: "Our Humble Beginnings"
+        img: "1.jpg"
+        date: "2009-2011"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      - title: "An Agency is Born"
+        img: "2.jpg"
+        date: "March 2011"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      - title: "Our Humble Beginnings"
+        img: "3.jpg"
+        date: "December 2012"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      - title: "Phase Two Expansion"
+        img: "4.jpg"
+        date: "July 2014"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+
+  # Team section
+  team:
+    enable: true
+    # Possibility to center items
+    #center: true
+    title: "Our amazing team"
+    subtitle: "Lorem ipsum dolor sit amet consectetur."
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+
+    members:
+
+      - name: "Chris Doten"
+        position: "CEO"
+        img: "chris.jpg"
+        #reportsTo: "N/A"
+        livesIn: "[Washington, DC, USA](#some-maps-url)"
+        scope:
+          - "Strategic [partnerships](#)"
+          - "Maintainer for [awesome-project](#)"
+          - "Open Source [community management](#)"
+        # For bio markdown and even multiline strings are available.
+        bio: "Chris is a global technology, political organizing, digital security and foreign policy expert melding academic and on-the-ground experience with China, Central Asia, American campaign politics, web application development, and computer network security."
+        social:
+          - ["fa-twitter", "https://twitter.com/cdoten"]
+          #- ["fa-facebook", "#"]
+          - ["fa-linkedin", "https://www.linkedin.com/in/cdoten/"]
+
+      - name: "Christine Schoellhorn"
+        position: "COO"
+        img: "christine.jpg"
+        #reportsTo: "CTO"
+        livesIn: "[Dragon Hill, VA, USA](#some-maps-url)"
+        scope:
+          - "UX for [member dashboard](#)"
+          - "Maintainer for [awesome-project](#)"
+          - "Open Source [community management](#)"
+        # For bio markdown and even multiline strings are available.
+        bio: "Christine works in the development and prototyping of tools and approaches that empower and scale democracy programing. Christine has a dual background in civic engagement and technology, and has worked internationally and domestically on sustainable resource policy and in product management and support for SaaS startups."
+        social:
+          - ["fa-twitter", "https://twitter.com/cschoellhorn"]
+          #- ["fa-facebook", "#"]
+          - ["fa-linkedin", "https://www.linkedin.com/in/christine-schoellhorn-1180a120/"]
+
+      - name: "Christopher Gervais"
+        position: "CTO"
+        img: "christopher.jpg"
+        livesIn: "[Montréal, QC, Canada](#some-maps-url)"
+        scope:
+          - "Software Architect for [citizen.tech](#) hosted services"
+          - "Project Lead for the [Aegir Hosting System](http://docs.aegirproject.org)"
+          - "Open Source [community management](#)"
+        bio: "Christopher is a long-time contributor and advocate of Free Software, and leads the Aegir Project, a coalition of developers and systems administrators whose primary goal is sharing best practices for securely and reliably hosting web applications."
+        social:
+          - ["fa-twitter", "https://twitter.com/ergonlogic"]
+          - ["fa-github", "https://github.com/ergonlogic"]
+          - ["fa-gitlab", "https://gitlab.com/ergonlogic"]
+          - ["fa-linkedin", "https://www.linkedin.com/in/christophergervais/"]
+
+  # Client section
+  clients_list:
+    enable: true
+#      # Possibility to center items
+#      #center = true
+#      # Optional client title specifying the involvement
+    title: "Proudly partnered with"
+#
+#      # All the clients' logos are stored under 'static/img/logos'.
+#      # Replace them with your clients's logos.
+#      # Suggestion: .svg in the size of 280px*80px looks good
+  clients:
+    - logo: "ndi.svg"
+      link: "#"
+    - logo: "aegir.png"
+      link: "#"
+    - logo: "civicrm.png"
+      link: "#"
+    - logo: "aws.png"
+      link: "#"
+#
+#      [[params.clients]]
+#        logo = "designmodo.jpg"
+#        link = "#"
+#
+#      [[params.clients]]
+#        logo = "themeforest.jpg"
+#        link = "#"
+#
+#      [[params.clients]]
+#        logo = "creative-market.jpg"
+#        link = "#"
+#
+  # Contact section
+  contact:
+    enable: true
+    title: "Contact us"
+    subtitle: "Lorem ipsum dolor sit amet consectetur."
+    buttonText: "Send message"
+
+#    # Since this template is static, the contact form uses www.formspree.io as a
+#    # proxy. The form makes a POST request to their servers to send the actual
+#    # email. Visitors can send up to a 1000 emails each month for free.
+#    #
+#    # What you need to do for the setup?
+#    #
+#    # - set your email address under 'email' below
+#    # - upload the generated site to your server
+#    # - send a dummy email yourself to confirm your account
+#    # - click the confirm link in the email from www.formspree.io
+#    # - you're done. Happy mailing!
+#
+#    # It is possible to substitute formspring with other providers
+#    # as an example the mailout plugin from caddy.
+#    # Provide the post URL for the form and depending on the provider
+#    # add some custom JS script to finish the implementation.
+#    # postURL = "https://example.com/mailout/"
+#
+#    email = "your@email.com"
+#
+#    # Success and error message overwrite for async contact form
+#    #thanks = "Thank you for awesomely contacting us."
+#    #error = "Message could not be send. Please contact us at mail@example.com instead."
+#
+#    # 'warning' defines error messages for invalid inputs
+#    [params.contact.form.name]
+#      text = "Your Name *"
+#      warning = "Please enter your name."
+#
+#    [params.contact.form.email]
+#      text = "Your Email *"
+#      warning = "Please enter your email address."
+#
+#    [params.contact.form.phone]
+#      text = "Your Phone *"
+#      warning = "Please enter your phone number."
+#
+#    [params.contact.form.message]
+#      text = "Your Message *"
+#      warning = "Please enter a message."
+#
+#      # Add optional form fields to identify contact forms
+#      #[[params.contact.form.hidden]]
+#      #  name = "someID"
+#      #  value = "example.com"
+#      #
+#      #[[params.contact.form.hidden]]
+#      # Special values for name such as "page" and "site" will be autofilled
+#      #  name = "page"
+#
+  # Footer section
+  footer:
+    enable: true
+    copyright: "Published under the Apache License 2.0."
+    social:
+      - icon: "fa-twitter"
+        link: "#"
+      - icon: "fa-linkedin"
+        link: "#"
+    quicklinks:
+      - text: "Privacy Policy"
+        link: "#"
+      - text: "Terms of Use"
+        link: "#"
