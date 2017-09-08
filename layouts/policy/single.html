@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+  {{ partial "head.html" . }}
+
+  <body id="page-top" class="index policy">
+    {{ partial "nav-pages.html" . }}
+ 
+
+<h1 id="policy-title" class="page-title navbar-fixed-top">{{ .Title }}</h1>
+<article>
+  {{ .Content }}
+  <div class="policy values">
+    {{ .Params.policy.values | markdownify }}
+  </div>
+  <div class="policy description">
+    {{ .Params.policy.description | markdownify }}
+  </div>
+  {{ range .Params.policy.clauses }}
+  <table>
+    <thead>
+      <td class="legal header">
+          {{ .header | markdownify }}
+      </td>
+      <td class="basic header">
+        Basically,
+      </td>
+    </thead>
+    <tr>
+      <td class="legal policy clause">
+          {{ .legal | markdownify }}
+      </td>
+      <td class="basic policy clause">
+          {{ .basic | markdownify }}
+      </td>
+    </tr>
+  </table>
+  {{ end }}
+</article>
+
+    {{ if .Site.Params.footer.enable }}
+      {{ partial "footer.html" . }}
+    {{ end }}
+
+    {{ partial "js.html" . }}
+  </body>
+</html>
