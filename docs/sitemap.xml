@@ -3,7 +3,18 @@
   
   <url>
     <loc>http://www.cocitizen.com/</loc>
+    <lastmod>2017-09-04T03:35:40-04:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.cocitizen.com/policies/terms/</loc>
+    <lastmod>2017-09-04T03:35:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.cocitizen.com/policies/privacy/</loc>
+    <lastmod>2017-09-01T23:50:03-04:00</lastmod>
   </url>
   
 </urlset>

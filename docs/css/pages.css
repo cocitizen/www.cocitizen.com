@@ -1,0 +1,62 @@
+
+.policy footer,
+.nav>li>a:hover,
+.navbar-pages {
+    background-color: #222;
+}
+
+.page-title {
+    padding-top: 30px;
+    padding-left: 1em;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.policy,
+.policy p {
+  line-height: 1.25;
+}
+
+.policy article {
+    padding-top: 8em;
+    padding-left: 2em;
+}
+
+.policy .values,
+.policy .description,
+.policy table {
+  width: 90%;
+  margin-top: 2em;
+}
+
+.policy table thead {
+  font-weight: bold;
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+.policy table td.header {
+  padding-bottom: 1em;
+}
+
+.policy table td.legal {
+  width: 60%;
+  padding-right: 2em;
+}
+
+.policy table td.basic.clause {
+  font-size: larger;
+}
+
+.policy table td {
+  vertical-align: top;
+}
+
+.policy .values {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.policy .description {
+  font-size: larger;
+}
