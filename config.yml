@@ -1,10 +1,11 @@
 ---
 
-title: "CoCitizen LLC"
+title: "CoCitizen website"
 baseurl: "http://www.cocitizen.com/"
+
 languageCode: "en-us"
 publishDir: "docs"
-
+metaDataFormat: yaml
 theme: "agency"
 
 #googleAnalytics: ""
@@ -18,6 +19,7 @@ params:
   custom_css:
     - "css/hero.css"
     - "css/logo.css"
+    - "css/pages.css"
   custom_js: []
   favicon: "favicon.ico"
 
@@ -26,6 +28,7 @@ params:
   disableFonts: false
 
   # 404 error customization
+  # This doesn't seem to work. @TODO: Fix it.
   error404:
     heading: "Page couldn't be found"
     text: "Please visit [this page](/)"
@@ -45,7 +48,7 @@ params:
     # Optional logo as brand stored in img/
     logo: "logo.png"
     services: "Services"
-    portfolio: "Portfolio"
+    portfolio: "Case Studies"
     about: "About"
     team: "Team"
     contact: "Contact"
@@ -71,54 +74,55 @@ params:
   hero:
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
-    title: "Welcome to CoCitizen!"
-    subtitle: "It's nice to meet you"
+    title: "Empower your community!"
+    subtitle: "Free and fair elections matter"
     buttonText: "Tell me more"
 
 
   # Services section
   services:
     enable: true
-    title: "Services"
-    subtitle: "Lorem ipsum dolor sit amet consectetur."
+    title: "Our Services"
+    subtitle: "CoCitizen is founded on the principle of helping people engage in democracy to the fullest extent."
 
     row:
       - list:
-        - icon: "fa-handshake-o"
-          title: "Constituent Relationship Management"
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-          url: "#"
-        - icon: "fa-pie-chart"
-          title: "Open Data"
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-          url: "#"
-        - icon: "fa-commenting-o"
-          title: "Community Engagement"
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-          url: "#"
-      - list:
-        - icon: "fa-institution"
-          title: "Open Government"
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-          url: "#"
-        - icon: "fa-group"
-          title: "Team Collaboration"
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-          url: "#"
         - icon: "fa-check-square-o"
-          title: "Petitions"
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-          url: "#"
+          title: "Data Collection and Analysis<br />of Political Processes"
+          description: "Our sophisticated data capture, automated analysis and visualization tools empower civic groups to document whether an election was, in fact, free and fair."
+          url: "https://dem.tools/elections"
+        - icon: "fa-handshake-o"
+          title: "Constituent Relationship<br />Management"
+          description: "Organizations are most effective when they can communicate with, understand and respond to the needs of their supporters."
+          url: "https://dem.tools/civi"
+        - icon: "fa-pie-chart"
+          title: "Curation and Visualization<br />of Open Data"
+          description: "Our Open Data curation tools provide searchable, indexed information repositories. Charts, graphs and maps can then wrap raw numbers in visualizations that have real impact."
+          url: "https://dem.tools/dkan"
+ 
+#      - list:
+#        - icon: "fa-institution"
+#          title: "Open Government"
+#          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+#          url: "#"
+#        - icon: "fa-group"
+#          title: "Team Collaboration"
+#          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+#          url: "#"
+#        - icon: "fa-commenting-o"
+#          title: "Community Engagement"
+#          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+#          url: "#"
  
 
   # Portfolio section
   portfolio:
-    enable: false
+    enable: true
     # All projects defined in their own files. You can find example projects
     # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
     # at the root of this Hugo site.
     # For more informtion take a look at the README.
-    title: "Portfolio"
+    title: "Case Studies"
     subtitle: "Lorem ipsum dolor sit amet consectetur."
 
 #    [params.portfolio.modal]
@@ -127,28 +131,15 @@ params:
 #      category = "Category"
 #      buttonText = "Close project"
     modal:
-      #- client: "Client"
-      #  date: "Date"
-      #  category: "Category"
-      #  buttonText: "Close project"
-
-      - modalID: 1
-        title: Round Icons
-        subtitle: Lorem ipsum dolor sit amet consectetur.
-        date: 2014-07-05
-        img: roundicons.png
-        preview: roundicons-preview.png
-        client: Start Bootstrap
-        clientLink: "#"
-        category: Graphic Design
-        description: Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo! <br><br>**Want these icons in this portfolio item sample?** You can download 60 of them for free, courtesy of [RoundIcons.com](//getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc), or you can purchase the 1500 icon set [here](//getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc).
-
-
+      client: "Case study"
+      date: "Date"
+      category: "Category"
+      buttonText: "Close project"
 
   # About section
   about:
     enable: true
-    title: "About"
+    title: "About Us"
     subtitle: "Lorem ipsum dolor sit amet consectetur."
     endpoint: "Be part<br>of our<br>story!"
 
@@ -156,21 +147,17 @@ params:
     # All images are stored under 'static/img/about'.
     # Replace them with your own.
     events:
-      - title: "Our Humble Beginnings"
+      - title: "Our Origin Story"
         img: "1.jpg"
-        date: "2009-2011"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-      - title: "An Agency is Born"
+        date: "Spring of 2013"
+        description: "Following CiviCon San Francisco 2013, the CiviCRM community hosted a sprint in the Sierra Nevada Foothills. It was there that [Chris Doten](#team) was introduced to [Christopher Gervais](#team). Chris had been looking for a solution to cost-effectively provide long-term support for NDI's international partners."
+      - title: "An Project is Born"
         img: "2.jpg"
-        date: "March 2011"
+        date: "2013-present"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
       - title: "Our Humble Beginnings"
         img: "3.jpg"
-        date: "December 2012"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-      - title: "Phase Two Expansion"
-        img: "4.jpg"
-        date: "July 2014"
+        date: "2016-present"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
 
@@ -333,6 +320,6 @@ params:
         link: "#"
     quicklinks:
       - text: "Privacy Policy"
-        link: "#"
+        link: "/policies/privacy"
       - text: "Terms of Use"
-        link: "#"
+        link: "/policies/terms"
